@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +7,9 @@
 body {
   background-color: #191765;
   font-family: 'Roboto', sans-serif;
+  background-image: url("Images/eclip3.svg");
+  background-position: 100% 45%;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {
@@ -114,6 +116,9 @@ body {
     display: grid;
     margin: 20%;
     width: 100%;
+    background-image: url("Images/eclips2.svg");
+    background-position: 0% 12%;
+    background-repeat: no-repeat;
   }
 
   .contactus {
