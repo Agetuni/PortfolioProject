@@ -200,6 +200,7 @@ body {
   }
 
   .workTechs li {
+    padding-right: 40px;
     color: #fff;
   }
 
@@ -216,5 +217,9 @@ body {
     margin: 24px;
     margin-top: 100px;
     border-top: 1px solid #3a3837;
+  }
+
+  .listseparator {
+    border-right: 1px solid #555;
   }
 }
