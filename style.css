@@ -215,6 +215,7 @@ body {
   }
 
   .worktitile {
+    margin-top: 100px;
     margin-left: 24px;
     font-size: 40px;
     color: #9490ff;
