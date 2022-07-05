@@ -155,6 +155,7 @@ body {
   .contactusform textarea {
     width: 100%;
     height: 80%;
+    color: black;
   }
 
   .works {
