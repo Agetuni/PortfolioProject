@@ -409,6 +409,7 @@
   }
 
   .works {
+    padding-top: 45px;
     display: grid;
   }
 
@@ -614,4 +615,9 @@
     background-repeat: no-repeat;
     background-position: 100% 10%;
   }
+}
+
+.down_button {
+  margin-left: 10px;
+  height: 22px;
 }
