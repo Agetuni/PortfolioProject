@@ -16,7 +16,12 @@
             Aleazar Yilma
         </div>
         <nav class="navigation">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars mobile_element "></i>
+            <i class="navigationitem_desktop desktop_element">Portoflio</i>
+            <i class="navigationitem_desktop desktop_element">About</i>
+            <i class="navigationitem_desktop desktop_element">Contact</i>
+            <i class="navigationitem_desktop desktop_element" id="dropdown"><img src="Images/icons/union.png"
+                    alt="navigaton"></i>
         </nav>
     </header>
     <main class="content">
@@ -65,7 +70,10 @@
                 </ul>
             </section>
         </section>
-        <section>
+        <section class="middlenavigator">
+            <div class="desktop_element down">
+                <span>Work </spa><img src="Images/icons/down.png" alt="downbutton" class="downbutton">
+            </div>
             <ul class="socialmedia">
                 <li>
                     <a href="">
@@ -96,95 +104,111 @@
 
 
             </ul>
+            <div class="desktop_element down">
+                <span>Work </spa><img src="Images/icons/down.png" alt="downbutton">
+            </div>
         </section>
         <section class="detailContent">
             <h2 class="worktitile"> MY RECENT WORK</h2>
             <ul class="works">
 
+
                 <li class="workCard">
+
                     <img src="Images/projectOne.png" alt="projectone">
-                    <h3>Multi-post Stories</h3>
-                    <p>A daily selection of privately personalized reads; no accounts or
-                        sign-ups required. has been the industry's standard dummy text ever
-                        since the 1500s, when an unknown printer took a standard dummy text.
-                    </p>
-                    <ul class="workTechs">
-                        <li class="listseparator">css</li>
-                        <li class="listseparator">html</li>
-                        <li class="listseparator">Bootstrap</li>
-                        <li>Ruby</li>
-                    </ul>
-                    <button class="seebutton">See project</button>
+
+                    <div class="projectdetail">
+                        <h3>Multi-post Stories</h3>
+                        <p>A daily selection of privately personalized reads; no accounts or
+                            sign-ups required. has been the industry's standard dummy text ever
+                            since the 1500s, when an unknown printer took a standard dummy text.
+                        </p>
+                        <ul class="workTechs">
+                            <li class="listseparator">css</li>
+                            <li class="listseparator">html</li>
+                            <li class="listseparator">Bootstrap</li>
+                            <li>Ruby</li>
+                        </ul>
+                        <button class="seebutton">See project</button>
+                    </div>
 
                 </li>
-                <li class="workCard" id="secondcard">
+                <li class="workCard odd" id="secondcard">
                     <img src="Images/projectOne.png" alt="projectone">
-                    <h3>Multi-post Stories</h3>
-                    <p>A daily selection of privately personalized reads; no accounts or
-                        sign-ups required. has been the industry's standard dummy text ever
-                        since the 1500s, when an unknown printer took a standard dummy text.
-                    </p>
-                    <ul class="workTechs">
-                        <li class="listseparator">css</li>
-                        <li class="listseparator">html</li>
-                        <li class="listseparator">Bootstrap</li>
-                        <li>Ruby</li>
-                    </ul>
-                    <button class="seebutton">See project</button>
+                    <div class="projectdetail">
+                        <h3>Multi-post Stories</h3>
+                        <p>A daily selection of privately personalized reads; no accounts or
+                            sign-ups required. has been the industry's standard dummy text ever
+                            since the 1500s, when an unknown printer took a standard dummy text.
+                        </p>
+                        <ul class="workTechs">
+                            <li class="listseparator">css</li>
+                            <li class="listseparator">html</li>
+                            <li class="listseparator">Bootstrap</li>
+                            <li>Ruby</li>
+                        </ul>
+                        <button class="seebutton">See project</button>
+                    </div>
                 </li>
-                <li class="workCard" id="thirdcard">
+                <li class="workCard " id="thirdcard">
                     <img src="Images/projectOne.png" alt="projectone">
-                    <h3>Multi-post Stories</h3>
-                    <p>A daily selection of privately personalized reads; no accounts or
-                        sign-ups required. has been the industry's standard dummy text ever
-                        since the 1500s, when an unknown printer took a standard dummy text.
-                    </p>
-                    <ul class="workTechs">
-                        <li class="listseparator">css</li>
-                        <li class="listseparator">html</li>
-                        <li class="listseparator">Bootstrap</li>
-                        <li class="listseparator">Ruby</li>
-                    </ul>
-                    <button class="seebutton">See project</button>
-
+                    <div class="projectdetail">
+                        <h3>Multi-post Stories</h3>
+                        <p>A daily selection of privately personalized reads; no accounts or
+                            sign-ups required. has been the industry's standard dummy text ever
+                            since the 1500s, when an unknown printer took a standard dummy text.
+                        </p>
+                        <ul class="workTechs">
+                            <li class="listseparator">css</li>
+                            <li class="listseparator">html</li>
+                            <li class="listseparator">Bootstrap</li>
+                            <li>Ruby</li>
+                        </ul>
+                        <button class="seebutton">See project</button>
+                    </div>
                 </li>
-                <li class="workCard" >
+                <li class="workCard odd">
                     <img src="Images/projectOne.png" alt="projectone">
-                    <h3>Multi-post Stories</h3>
-                    <p>A daily selection of privately personalized reads; no accounts or
-                        sign-ups required. has been the industry's standard dummy text ever
-                        since the 1500s, when an unknown printer took a standard dummy text.
-                    </p>
-                    <ul class="workTechs">
-                        <li class="listseparator">css</li>
-                        <li class="listseparator">html</li>
-                        <li class="listseparator">Bootstrap</li>
-                        <li>Ruby</li>
-                    </ul>
-                    <button class="seebutton">See project</button>
-
+                    <div class="projectdetail">
+                        <h3>Multi-post Stories</h3>
+                        <p>A daily selection of privately personalized reads; no accounts or
+                            sign-ups required. has been the industry's standard dummy text ever
+                            since the 1500s, when an unknown printer took a standard dummy text.
+                        </p>
+                        <ul class="workTechs">
+                            <li class="listseparator">css</li>
+                            <li class="listseparator">html</li>
+                            <li class="listseparator">Bootstrap</li>
+                            <li>Ruby</li>
+                        </ul>
+                        <button class="seebutton">See project</button>
+                    </div>
                 </li>
 
 
             </ul>
             <section class="contactus">
-                <h2 class="contactustitle">CONTACT US</h2>
-                <P>If you have an application you are interested in developing, a feature that you need built or a
-                    project that needs coding. I’d love to help with it </P>
+                <div class="contactus_container">
+                    <h2 class="contactustitle mobile_element ">CONTACT US</h2>
+                    <h2 class="desktop_element  ">Let's chat!</h2>
+                    <P>If you have an application you are interested in developing, a feature that you need built or a
+                        project that needs coding. I’d love to help with it </P>
 
-                <form action="https://formspree.io/f/xnqwkjwy" method="POST" name="contactus" class="contactusform">
-                    <input type="text" name="Fullname" placeholder="Full name" maxlength="30" required>
-                    <input type="email" name="email" placeholder="E-mail"  required>
-                    <textarea name="text" cols="30" rows="10" placeholder="Enter text here" maxlength="500" required></textarea>
-                    <button type="submit" class="seebutton"> Send</button>
-                </form>
+                    <form action="https://formspree.io/f/xnqwkjwy" method="POST" name="contactus" class="contactusform">
+                        <input type="text" name="Fullname" placeholder="Full name">
+                        <input type="email" name="email" placeholder="E-mail">
+                        <textarea placeholder="Enter your text " rows="10" cols="10">
+                                                    </textarea>
+                        <button type="submit" class="submit_button"> Send</button>
+                    </form>
 
+                </div>
             </section>
 
         </section>
     </main>
     <footer class="footer">
-        <ul class="socialmedia">
+        <ul class="socialmediabuttom">
             <li>
                 <a href="">
                     <img src="Images/icons/github.png" alt="github">
@@ -212,6 +236,7 @@
                 </a>
             </li>
         </ul>
+        <span class="email">aleazaryilma@outlook.com</span>
     </footer>
 
 </body>
