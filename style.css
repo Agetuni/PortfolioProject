@@ -228,7 +228,7 @@
     padding-bottom: 25px;
     border-bottom: 1px solid #646369;
   }
- 
+
   .listseparator {
     border-right: 1px solid #555;
   }
@@ -242,6 +242,7 @@
     font-size: 12px;
     align-items: center;
   }
+
   footer {
     margin-top: 140px;
     display: flex;
@@ -280,7 +281,7 @@
     font-family: 'Roboto', sans-serif;
     flex-direction: column;
     background-image: url('/Images/circleOne.svg');
-    background-position: 90% 17%;
+    background-position: 90% 14%;
     background-repeat: no-repeat;
   }
 
@@ -418,7 +419,8 @@
   }
 
   .workCard {
-    margin-top: 96px;
+    /* margin-top: 96px; */
+    padding-bottom: 196px;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-auto-flow: column dense;
@@ -501,8 +503,7 @@
     font-size: 12px;
   }
 
-  .contactus {
-    padding-top: 228px;
+  .contactus {158px;
     display: flex;
     justify-content: center;
   }
@@ -541,7 +542,7 @@
   .contactusform textarea {
     width: 100%;
     margin-top: 10px;
-    margin-bottom:100px ;
+    margin-bottom: 100px;
 
   }
 
@@ -605,5 +606,25 @@
     font-size: 20px;
   }
 
+  #first {
+    background-image: url(Images/leftUp.svg);
+    background-repeat: no-repeat;
+    background-position: 0% %;
+  }
+#secondcard {
+  background-image: url(Images/rightUp.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+#thirdcard {
+  background-image: url(Images/rightBottom.svg);
+  background-repeat: no-repeat;
+  background-position: 0% 90%;
+}
+#fourthcard {
+  background-image: url(Images/leftBottom.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 10%;
+}
 
 }
