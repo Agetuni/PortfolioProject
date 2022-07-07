@@ -1,5 +1,4 @@
 @media (max-width: 768px) {
-
   * {
     margin: 0;
     padding: 0;
@@ -264,7 +263,7 @@
 
   .email {
     margin-top: 18px;
-    color: #EBEBFF;
+    color: #ebebff;
     font-size: 20px;
   }
 }
@@ -291,7 +290,6 @@
     display: flex;
     padding-top: 26px;
     color: #fff;
-
   }
 
   .name {
@@ -339,11 +337,10 @@
 
   .title {
     text-align: center;
-
   }
 
   .title h1 {
-    color: #9390FF;
+    color: #9390ff;
     font-size: 90px;
   }
 
@@ -375,10 +372,7 @@
     border-top: 1px solid #646369;
     border-bottom: 1px solid #646369;
     justify-content: space-between;
-
   }
-
-  .tech {}
 
   .tech ul {
     list-style-type: none;
@@ -386,19 +380,20 @@
     color: white;
   }
 
+  .workTechs li {
+    padding-right: 40px;
+    color: #fff;
+  }
+
   .tech ul li {
     margin-top: 13px;
   }
 
   .stackesHeader {
-    color: #9390FF;
+    color: #9390ff;
     font-size: 18px;
     margin-top: 37px;
   }
-
-
-
-
 
   .detailContent {
     margin-top: 230px;
@@ -414,7 +409,6 @@
   }
 
   .works {
-
     display: grid;
   }
 
@@ -432,7 +426,6 @@
     width: 684px;
     height: 448px;
     background-color: pink;
-
   }
 
   .workCard h3 {
@@ -458,11 +451,6 @@
     display: flex;
     justify-content: space-evenly;
     color: #555;
-  }
-
-  .workTechs li {
-    padding-right: 40px;
-    color: #fff;
   }
 
   .listseparator {
@@ -503,14 +491,14 @@
     font-size: 12px;
   }
 
-  .contactus {158px;
+  .contactus {
     display: flex;
     justify-content: center;
   }
 
   .contactus h2 {
     text-align: center;
-    color: #9390FF;
+    color: #9390ff;
     font-size: 40px;
   }
 
@@ -521,7 +509,7 @@
   .contactus p {
     text-align: center;
     font-size: 20px;
-    color: #EBEBFF;
+    color: #ebebff;
     margin-top: 24px;
   }
 
@@ -543,7 +531,6 @@
     width: 100%;
     margin-top: 10px;
     margin-bottom: 100px;
-
   }
 
   footer {
@@ -562,7 +549,6 @@
     align-content: space-between;
     margin-top: 16px;
     width: 20%;
-
   }
 
   .submit_button {
@@ -571,7 +557,6 @@
     height: 48px;
     background-color: #7d73fc;
     color: #edecff;
-    margin: auto;
   }
 
   .middlenavigator {
@@ -587,7 +572,7 @@
     justify-content: center;
     height: 30px;
     font-size: 20px;
-    color: #B3BAC5;
+    color: #b3bac5;
   }
 
   .socialmedia {
@@ -602,7 +587,7 @@
 
   .email {
     margin-top: 12px;
-    color: #EBEBFF;
+    color: #ebebff;
     font-size: 20px;
   }
 
@@ -611,20 +596,22 @@
     background-repeat: no-repeat;
     background-position: 0% %;
   }
-#secondcard {
-  background-image: url(Images/rightUp.svg);
-  background-repeat: no-repeat;
-  background-position: 100% 50%;
-}
-#thirdcard {
-  background-image: url(Images/rightBottom.svg);
-  background-repeat: no-repeat;
-  background-position: 0% 90%;
-}
-#fourthcard {
-  background-image: url(Images/leftBottom.svg);
-  background-repeat: no-repeat;
-  background-position: 100% 10%;
-}
 
+  #secondcard {
+    background-image: url(Images/rightUp.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+  }
+
+  #thirdcard {
+    background-image: url(Images/rightBottom.svg);
+    background-repeat: no-repeat;
+    background-position: 0% 90%;
+  }
+
+  #fourthcard {
+    background-image: url(Images/leftBottom.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 10%;
+  }
 }
