@@ -228,14 +228,7 @@
     padding-bottom: 25px;
     border-bottom: 1px solid #646369;
   }
-
-  .footer {
-    width: 100%;
-    margin: 24px;
-    margin-top: 150px;
-    border-top: 1px solid #3a3837;
-  }
-
+ 
   .listseparator {
     border-right: 1px solid #555;
   }
@@ -248,6 +241,30 @@
     color: #edecff;
     font-size: 12px;
     align-items: center;
+  }
+  footer {
+    margin-top: 140px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: ev;
+    width: 100%;
+    border-top: 1px solid #646369;
+  }
+
+  .socialmediabuttom {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: baseline;
+    align-content: space-between;
+    margin-top: 16px;
+    width: 30%;
+  }
+
+  .email {
+    margin-top: 18px;
+    color: #EBEBFF;
+    font-size: 20px;
   }
 }
 
