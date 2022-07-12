@@ -16,6 +16,8 @@
   header {
     display: flex;
     justify-content: space-evenly;
+    padding-left: 20px;
+    padding-right: 160px;
   }
 
   .navigation {
@@ -53,6 +55,7 @@
 
   .title {
     margin-top: 63px;
+    margin-left: 60px;
     font-size: 40px;
     font-weight: 700px;
     line-height: 72px;
@@ -61,6 +64,7 @@
 
   .occupation {
     margin-top: 12px;
+    margin-left: 60px;
     font-size: 32px;
     font-weight: 500;
     color: #edecff;
@@ -636,4 +640,14 @@
 .down_button {
   margin-left: 10px;
   height: 22px;
+}
+
+.transition_button {
+  opacity: 1;
+  transition: all 250ms ease;
+}
+
+.transition_button:hover {
+  transform: scale(1.1);
+  opacity: 0.5;
 }
