@@ -322,6 +322,13 @@
 
   .navigationitem_desktop {
     margin-left: 32px;
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  .navigationitem_desktop a {
+    color: inherit;
+    text-decoration: inherit;
   }
 
   .mobile_element {
