@@ -416,16 +416,29 @@
   .workCard {
     /* margin-top: 96px; */
     padding-bottom: 196px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-auto-flow: column dense;
-    column-gap: -20px;
+    display: flex;
+  }
+
+  .odd {
+    flex-direction: row-reverse;
+  }
+
+  .image_container {
+    width: 100%;
+  }
+
+  .projectdetail {
+    width: 100%;
   }
 
   .workCard img {
     margin-left: 142px;
     width: 684px;
-    height: 448px;
+
+    /* height: 448px; */
+
+    /* width: auto; */
+    height: auto;
     background-color: pink;
   }
 
