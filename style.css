@@ -16,6 +16,8 @@
   header {
     display: flex;
     justify-content: space-evenly;
+    padding-left: 20px;
+    padding-right: 160px;
   }
 
   .navigation {
@@ -30,7 +32,7 @@
 
   .content {
     margin: 0;
-    background-image: url("images/eclips.svg");
+    background-image: url("Images/eclips.svg");
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -53,6 +55,7 @@
 
   .title {
     margin-top: 63px;
+    margin-left: 60px;
     font-size: 40px;
     font-weight: 700px;
     line-height: 72px;
@@ -61,6 +64,7 @@
 
   .occupation {
     margin-top: 12px;
+    margin-left: 60px;
     font-size: 32px;
     font-weight: 500;
     color: #edecff;
@@ -414,19 +418,35 @@
   }
 
   .workCard {
-    /* margin-top: 96px; */
     padding-bottom: 196px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-auto-flow: column dense;
-    column-gap: -20px;
+    display: flex;
+  }
+
+  .image_container {
+    width: 100%;
+  }
+
+  .projectdetail {
+    width: 100%;
   }
 
   .workCard img {
     margin-left: 142px;
     width: 684px;
-    height: 448px;
+
+    /* height: 448px; */
+
+    /* width: auto; */
+    height: auto;
     background-color: pink;
+  }
+
+  .odd {
+    flex-direction: row-reverse;
+  }
+
+  .odd img {
+    margin: 0;
   }
 
   .workCard h3 {
