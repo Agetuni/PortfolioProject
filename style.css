@@ -30,7 +30,7 @@
 
   .content {
     margin: 0;
-    background-image: url("images/eclips.svg");
+    background-image: url("Images/eclips.svg");
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
