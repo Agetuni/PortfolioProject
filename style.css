@@ -414,13 +414,8 @@
   }
 
   .workCard {
-    /* margin-top: 96px; */
     padding-bottom: 196px;
     display: flex;
-  }
-
-  .odd {
-    flex-direction: row-reverse;
   }
 
   .image_container {
@@ -440,6 +435,14 @@
     /* width: auto; */
     height: auto;
     background-color: pink;
+  }
+
+  .odd {
+    flex-direction: row-reverse;
+  }
+
+  .odd img {
+    margin: 0;
   }
 
   .workCard h3 {
