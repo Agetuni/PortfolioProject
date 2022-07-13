@@ -206,7 +206,7 @@
     width: 25%;
     height: 48px;
     background-color: #7d73fc;
-    color: #edecff;
+    color: #000;
     font-size: 12px;
   }
 
@@ -241,7 +241,7 @@
     width: 25%;
     height: 48px;
     background-color: #7d73fc;
-    color: #edecff;
+    color: #000;
     font-size: 12px;
     align-items: center;
   }
@@ -491,7 +491,7 @@
     width: 25%;
     height: 48px;
     background-color: #7d73fc;
-    color: #edecff;
+    color: #000;
     font-size: 12px;
   }
 
@@ -515,7 +515,7 @@
     width: 25%;
     height: 48px;
     background-color: #7d73fc;
-    color: #edecff;
+    color: #000;
     font-size: 12px;
   }
 
@@ -584,7 +584,7 @@
     width: 25%;
     height: 48px;
     background-color: #7d73fc;
-    color: #edecff;
+    color: #000;
   }
 
   .middlenavigator {
