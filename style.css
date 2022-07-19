@@ -38,7 +38,7 @@
     list-style-type: none;
     background-image: url('Images/mobile_menu_top.png');
     background-repeat: no-repeat;
-    background-position: 0  8%;
+    background-position: 0 8%;
     height: 80%;
   }
 
@@ -307,10 +307,14 @@
     font-size: 20px;
   }
 
-  .mobile_menu li {
-    margin-top: 20px;
+  .mobile_menu a {
+    text-decoration: none;
     font-size: 24px;
     color: white;
+  }
+
+  .mobile_menu li {
+    margin-top: 20px;
     padding: 12px;
   }
 
