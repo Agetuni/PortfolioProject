@@ -1,3 +1,4 @@
+
 @media (max-width: 768px) {
   * {
     margin: 0;
@@ -21,6 +22,29 @@
     display: flex;
     justify-content: space-evenly;
     padding-left: 20px;
+  }
+
+  .modal-content {
+    width: 70%;
+  }
+
+  .modal-body-detail {
+    margin: 2% 2%;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+  }
+
+  .modal-title {
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .modal-close {
+    border: none;
+    background: none;
+    font-size: 20px;
+    color: #fff;
   }
 
   .mobile_nav {
