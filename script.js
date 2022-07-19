@@ -1,10 +1,15 @@
+
 function OpenMobileMenu() {
     const mobileMenu = document.querySelector('#modile_nav');
+    let main =document.querySelector('main');
     mobileMenu.classList.remove('show_hide');
+    main.classList.add('hidden');
   }
   function CloseMobileMenu() {
     const mobileMenu = document.querySelector('#modile_nav');
     mobileMenu.classList.add('show_hide');
+    let main =document.querySelector('main');
+    main.classList.remove('hidden');
   }
   document.addEventListener('DOMContentLoaded', () => {
     const openMenuElement = document.querySelector('#open_mobile_humberger');
