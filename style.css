@@ -93,7 +93,6 @@
     margin-top: 63px;
     margin-left: 60px;
     font-size: 40px;
-    font-weight: 700px;
     line-height: 72px;
     color: #7d73fc;
   }
@@ -286,7 +285,6 @@
     margin-top: 140px;
     display: flex;
     justify-content: space-evenly;
-    align-items: ev;
     width: 100%;
     border-top: 1px solid #646369;
   }
