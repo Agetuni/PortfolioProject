@@ -1,3 +1,9 @@
+.error-message {
+  color: red;
+  display: block;
+  margin-top: 12px;
+}
+
 .modal {
   position: fixed;
   z-index: 1;
@@ -85,6 +91,10 @@
 .modal-body-actions img {
   width: 15px;
   margin-left: 5px;
+}
+
+.white {
+  color: #fff;
 }
 
 .hidden {
@@ -482,6 +492,12 @@
     display: flex;
     padding-top: 26px;
     color: #fff;
+  }
+
+  .error-message {
+    color: red;
+    display: block;
+    margin-top: 0;
   }
 
   .name {
