@@ -135,7 +135,7 @@ function OnSubmit(event) {
   const contactUsForm = document.querySelector('.contactusform');
   const email = contactUsForm.elements.email.value;
   if (email !== email.toLowerCase()) {
-    ShowErrorMessage(`Please use lower-case letters for your email. <span class='white'> (${email.toLowerCase()})</span>`);
+    ShowErrorMessage(`*Please use lower-case letters for your email. <span class='white'> (${email.toLowerCase()})</span>`);
     event.preventDefault();
   }
 }
