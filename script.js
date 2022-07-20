@@ -2,9 +2,9 @@ const projects = [
   {
     projectId: 1,
     projectTitle: 'Multi-Post one',
-    description: "A daily selection of privately personalized reads; no accounts or\
-    sign-ups required. has been the industry's standard dummy text ever\
-    since the 1500s, when an unknown printer took a standard dummy text.",
+    description: 'A daily selection of privately personalized reads; no accounts or'
+    + "sign-ups required. has been the industry's standard dummy text ever"
+    + 'since the 1500s, when an unknown printer took a standard dummy text.',
     image: 'Images/projectOne.png',
     technologies: ['html', 'css', 'ruby'],
     livelink: 'www.google.com',
@@ -13,9 +13,9 @@ const projects = [
   {
     projectId: 2,
     projectTitle: 'Multi-Post two',
-    description: "A daily selection of privately personalized reads; no accounts or\
-    sign-ups required. has been the industry's standard dummy text ever\
-    since the 1500s, when an unknown printer took a standard dummy text.",
+    description: 'A daily selection of privately personalized reads; no accounts or'
+    + "sign-ups required. has been the industry's standard dummy text ever"
+    + 'since the 1500s, when an unknown printer took a standard dummy text.',
     image: 'Images/projectOne.png',
     technologies: ['html', 'css', 'ruby'],
     livelink: 'www.google.com',
@@ -24,9 +24,9 @@ const projects = [
   {
     projectId: 3,
     projectTitle: 'Multi-Post three',
-    description: "A daily selection of privately personalized reads; no accounts or\
-    sign-ups required. has been the industry's standard dummy text ever\
-    since the 1500s, when an unknown printer took a standard dummy text.",
+    description: 'A daily selection of privately personalized reads; no accounts or'
+    + "sign-ups required. has been the industry's standard dummy text ever"
+    + 'since the 1500s, when an unknown printer took a standard dummy text.',
     image: 'Images/projectOne.png',
     technologies: ['html', 'css', 'ruby'],
     livelink: 'www.google.com',
@@ -35,9 +35,9 @@ const projects = [
   {
     projectId: 4,
     projectTitle: 'Multi-Post Four',
-    description: "A daily selection of privately personalized reads; no accounts or\
-    sign-ups required. has been the industry's standard dummy text ever\
-    since the 1500s, when an unknown printer took a standard dummy text.",
+    description: 'A daily selection of privately personalized reads; no accounts or'
+    + "sign-ups required. has been the industry's standard dummy text ever"
+    + 'since the 1500s, when an unknown printer took a standard dummy text.',
     image: 'Images/projectOne.png',
     technologies: ['html', 'css', 'ruby'],
     livelink: 'www.google.com',
@@ -62,20 +62,14 @@ function GenerateCardContent(project) {
      <button data-id ="${project.projectId}"class="seebutton transition_button seedetail" type="submit">See project</button>\
  </div>\
 </li>`;
-  if (project.projectId % 2 == 0) {
+  if (project.projectId % 2 === 0) {
     result = result.replace('class="workCard"', 'class="workCard odd" id="secondcard"');
   }
   return result;
 }
 function GenerateModalContent(project) {
   const technology = GetTechnologyListHtmlContent(project);
-  const modalContent = `\
-  <div class="modal-content">\
-  <header class="modal-header">\
-      <span class="modal-title">${project.projectTitle}</span>\
-      <button data-close-button class="modal-close">&times;</button>\
-  </header>\
-  <div class="modal-body">\
+  const modalContent = `
       <div class="modal-body-img">\
       <img src="Images/snap.png" alt="">\
       </div>\
@@ -89,7 +83,7 @@ function GenerateModalContent(project) {
           <button>\
               <span>See Source</span>\
               <img src="Images/icons/seesource.png" alt="see project source code">\
-          </button></div></div></div> \
+          </button></div>\
   `;
   return modalContent;
 }
@@ -103,9 +97,11 @@ function AddProjects() {
 }
 
 function CloseModal() {
-  alert('hi');
   const modal = document.querySelector('.modal');
-  modal.innerHTML = '';
+  const modalBody = document.querySelector('.modal-body');
+  const modalTitle = document.querySelector('.modal-title');
+  modalBody.innerHTML = '';
+  modalTitle.innerHTML = '';
   modal.classList.add('hidden');
 }
 function OpenMobileMenu() {
@@ -122,14 +118,15 @@ function CloseMobileMenu() {
 }
 function GetProjectDetail() {
   const projectId = this.getAttribute('data-id');
-  debugger;
-  const project = projects.find((e) => e.projectId == projectId);
-  const htmlContent = GenerateModalContent(project);
+  const project = projects.find((e) => e.projectId === parseInt(projectId, 10));
+  const bodyContent = GenerateModalContent(project);
   const modal = document.querySelector('.modal');
-  modal.innerHTML = htmlContent;
+  const modalBody = document.querySelector('.modal-body');
+  const modalTitle = document.querySelector('.modal-title');
+  modalBody.innerHTML = bodyContent;
+  modalTitle.innerHTML = project.projectTitle;
   modal.classList.remove('hidden');
 }
-
 document.addEventListener('DOMContentLoaded', () => {
   AddProjects();
   const openMenuElement = document.querySelector('#open_mobile_humberger');
@@ -138,7 +135,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const others = document.querySelector('.mobile_nav');
   const detailProjectbuttons = document.querySelectorAll('.seedetail');
   const closeModalButtons = document.querySelectorAll('.modal-close');
-
   others.addEventListener('click', CloseMobileMenu);
   openMenuElement.addEventListener('click', OpenMobileMenu);
   closeMenuElement.addEventListener('click', CloseMobileMenu);

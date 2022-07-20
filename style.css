@@ -87,15 +87,15 @@
   margin-left: 5px;
 }
 
+.hidden {
+  display: none !important;
+}
+
 @media (max-width: 768px) {
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-
-  .hidden {
-    display: none !important;
   }
 
   body {
