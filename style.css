@@ -1,3 +1,9 @@
+.error-message {
+  color: red;
+  display: block;
+  margin-top: 12px;
+}
+
 .modal {
   position: fixed;
   z-index: 1;
@@ -85,6 +91,10 @@
 .modal-body-actions img {
   width: 15px;
   margin-left: 5px;
+}
+
+.white {
+  color: #fff;
 }
 
 .hidden {
@@ -484,6 +494,12 @@
     color: #fff;
   }
 
+  .error-message {
+    color: red;
+    display: block;
+    margin-top: 0;
+  }
+
   .name {
     /* background-color: pink; */
     width: 100%;
@@ -746,7 +762,7 @@
   .contactusform textarea {
     width: 100%;
     margin-top: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
   }
 
   footer {

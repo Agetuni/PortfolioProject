@@ -127,6 +127,18 @@ function GetProjectDetail() {
   modalTitle.innerHTML = project.projectTitle;
   modal.classList.remove('hidden');
 }
+function ShowErrorMessage(message) {
+  const errormessage = document.querySelector('.error-message');
+  errormessage.innerHTML = message;
+}
+function OnSubmit(event) {
+  const contactUsForm = document.querySelector('.contactusform');
+  const email = contactUsForm.elements.email.value;
+  if (email !== email.toLowerCase()) {
+    ShowErrorMessage(`*Please use lower-case letters for your email. <span class='white'> (${email.toLowerCase()})</span>`);
+    event.preventDefault();
+  }
+}
 document.addEventListener('DOMContentLoaded', () => {
   AddProjects();
   const openMenuElement = document.querySelector('#open_mobile_humberger');
@@ -135,6 +147,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const others = document.querySelector('.mobile_nav');
   const detailProjectbuttons = document.querySelectorAll('.seedetail');
   const closeModalButtons = document.querySelectorAll('.modal-close');
+  const contactUsForm = document.querySelector('.contactusform');
+
+  contactUsForm.addEventListener('submit', OnSubmit);
   others.addEventListener('click', CloseMobileMenu);
   openMenuElement.addEventListener('click', OpenMobileMenu);
   closeMenuElement.addEventListener('click', CloseMobileMenu);
