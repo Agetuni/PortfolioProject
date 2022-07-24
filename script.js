@@ -1,51 +1,60 @@
+const formData = {
+  fullName: "",
+  email: "",
+  message: "",
+};
 const projects = [
   {
     projectId: 1,
-    projectTitle: 'Multi-Post one',
-    description: 'A daily selection of privately personalized reads; no accounts or'
-    + "sign-ups required. has been the industry's standard dummy text ever"
-    + 'since the 1500s, when an unknown printer took a standard dummy text.',
-    image: 'Images/projectOne.png',
-    technologies: ['html', 'css', 'ruby'],
-    livelink: 'www.google.com',
-    soruceLink: 'wwww.google.com',
+    projectTitle: "Multi-Post one",
+    description:
+      "A daily selection of privately personalized reads; no accounts or" +
+      "sign-ups required. has been the industry's standard dummy text ever" +
+      "since the 1500s, when an unknown printer took a standard dummy text.",
+    image: "Images/projectOne.png",
+    technologies: ["html", "css", "ruby"],
+    livelink: "www.google.com",
+    soruceLink: "wwww.google.com",
   },
   {
     projectId: 2,
-    projectTitle: 'Multi-Post two',
-    description: 'A daily selection of privately personalized reads; no accounts or'
-    + "sign-ups required. has been the industry's standard dummy text ever"
-    + 'since the 1500s, when an unknown printer took a standard dummy text.',
-    image: 'Images/projectOne.png',
-    technologies: ['html', 'css', 'ruby'],
-    livelink: 'www.google.com',
-    soruceLink: 'wwww.google.com',
+    projectTitle: "Multi-Post two",
+    description:
+      "A daily selection of privately personalized reads; no accounts or" +
+      "sign-ups required. has been the industry's standard dummy text ever" +
+      "since the 1500s, when an unknown printer took a standard dummy text.",
+    image: "Images/projectOne.png",
+    technologies: ["html", "css", "ruby"],
+    livelink: "www.google.com",
+    soruceLink: "wwww.google.com",
   },
   {
     projectId: 3,
-    projectTitle: 'Multi-Post three',
-    description: 'A daily selection of privately personalized reads; no accounts or'
-    + "sign-ups required. has been the industry's standard dummy text ever"
-    + 'since the 1500s, when an unknown printer took a standard dummy text.',
-    image: 'Images/projectOne.png',
-    technologies: ['html', 'css', 'ruby'],
-    livelink: 'www.google.com',
-    soruceLink: 'wwww.google.com',
+    projectTitle: "Multi-Post three",
+    description:
+      "A daily selection of privately personalized reads; no accounts or" +
+      "sign-ups required. has been the industry's standard dummy text ever" +
+      "since the 1500s, when an unknown printer took a standard dummy text.",
+    image: "Images/projectOne.png",
+    technologies: ["html", "css", "ruby"],
+    livelink: "www.google.com",
+    soruceLink: "wwww.google.com",
   },
   {
     projectId: 4,
-    projectTitle: 'Multi-Post Four',
-    description: 'A daily selection of privately personalized reads; no accounts or'
-    + "sign-ups required. has been the industry's standard dummy text ever"
-    + 'since the 1500s, when an unknown printer took a standard dummy text.',
-    image: 'Images/projectOne.png',
-    technologies: ['html', 'css', 'ruby'],
-    livelink: 'www.google.com',
-    soruceLink: 'wwww.google.com',
+    projectTitle: "Multi-Post Four",
+    description:
+      "A daily selection of privately personalized reads; no accounts or" +
+      "sign-ups required. has been the industry's standard dummy text ever" +
+      "since the 1500s, when an unknown printer took a standard dummy text.",
+    image: "Images/projectOne.png",
+    technologies: ["html", "css", "ruby"],
+    livelink: "www.google.com",
+    soruceLink: "wwww.google.com",
   },
 ];
 function GetTechnologyListHtmlContent(project) {
-  let technology = '';
+  let technology = "";
   project.technologies.forEach((item) => {
     technology += `<li class="listseparator">${item}</li>`;
   });
@@ -63,7 +72,10 @@ function GenerateCardContent(project) {
  </div>\
 </li>`;
   if (project.projectId % 2 === 0) {
-    result = result.replace('class="workCard"', 'class="workCard odd" id="secondcard"');
+    result = result.replace(
+      'class="workCard"',
+      'class="workCard odd" id="secondcard"'
+    );
   }
   return result;
 }
@@ -88,8 +100,8 @@ function GenerateModalContent(project) {
   return modalContent;
 }
 function AddProjects() {
-  let htmlContent = '';
-  const projectContainer = document.querySelector('.works');
+  let htmlContent = "";
+  const projectContainer = document.querySelector(".works");
   projects.forEach((project) => {
     htmlContent += GenerateCardContent(project);
   });
@@ -97,69 +109,98 @@ function AddProjects() {
 }
 
 function CloseModal() {
-  const modal = document.querySelector('.modal');
-  const modalBody = document.querySelector('.modal-body');
-  const modalTitle = document.querySelector('.modal-title');
-  modalBody.innerHTML = '';
-  modalTitle.innerHTML = '';
-  modal.classList.add('hidden');
+  const modal = document.querySelector(".modal");
+  const modalBody = document.querySelector(".modal-body");
+  const modalTitle = document.querySelector(".modal-title");
+  modalBody.innerHTML = "";
+  modalTitle.innerHTML = "";
+  modal.classList.add("hidden");
 }
 function OpenMobileMenu() {
-  const mobileMenu = document.querySelector('#modile_nav');
-  const main = document.querySelector('main');
-  mobileMenu.classList.remove('show_hide');
-  main.classList.add('hidden');
+  const mobileMenu = document.querySelector("#modile_nav");
+  const main = document.querySelector("main");
+  mobileMenu.classList.remove("show_hide");
+  main.classList.add("hidden");
 }
 function CloseMobileMenu() {
-  const mobileMenu = document.querySelector('#modile_nav');
-  mobileMenu.classList.add('show_hide');
-  const main = document.querySelector('main');
-  main.classList.remove('hidden');
+  const mobileMenu = document.querySelector("#modile_nav");
+  mobileMenu.classList.add("show_hide");
+  const main = document.querySelector("main");
+  main.classList.remove("hidden");
 }
 function GetProjectDetail() {
-  const projectId = this.getAttribute('data-id');
+  const projectId = this.getAttribute("data-id");
   const project = projects.find((e) => e.projectId === parseInt(projectId, 10));
   const bodyContent = GenerateModalContent(project);
-  const modal = document.querySelector('.modal');
-  const modalBody = document.querySelector('.modal-body');
-  const modalTitle = document.querySelector('.modal-title');
+  const modal = document.querySelector(".modal");
+  const modalBody = document.querySelector(".modal-body");
+  const modalTitle = document.querySelector(".modal-title");
   modalBody.innerHTML = bodyContent;
   modalTitle.innerHTML = project.projectTitle;
-  modal.classList.remove('hidden');
+  modal.classList.remove("hidden");
 }
 function ShowErrorMessage(message) {
-  const errormessage = document.querySelector('.error-message');
+  const errormessage = document.querySelector(".error-message");
   errormessage.innerHTML = message;
 }
 function OnSubmit(event) {
-  const contactUsForm = document.querySelector('.contactusform');
+  const contactUsForm = document.querySelector(".contactusform");
   const email = contactUsForm.elements.email.value;
   if (email !== email.toLowerCase()) {
-    ShowErrorMessage(`*Please use lower-case letters for your email. <span class='white'> (${email.toLowerCase()})</span>`);
+    ShowErrorMessage(
+      `*Please use lower-case letters for your email. <span class='white'> (${email.toLowerCase()})</span>`
+    );
     event.preventDefault();
   }
 }
-document.addEventListener('DOMContentLoaded', () => {
+function StoreDataOnLocalStorage(key, value) {
+  localStorage.setItem(key, value);  
+}
+function GetDatafromLocalStorage(key, value) {
+  return localStorage.getItem(key);
+}
+function UpdateFormDataStorage() {
+  const formInputs = document.querySelectorAll(".formdata");
+  formData.fullName = formInputs[0].value;
+  formData.email = formInputs[1].value;
+  formData.message = formInputs[2].value;
+  var data = JSON.stringify(formData);
+  StoreDataOnLocalStorage("formData", data);
+}
+function GetFormData() {
+  var storedData = GetDatafromLocalStorage("formData");
+  const formInputs = document.querySelectorAll(".formdata");
+  var data = JSON.parse(storedData);
+  formInputs[0].value= data.fullName;
+  formInputs[1].value= data.email;
+  formInputs[2].innerHTML= data.message;
+}
+document.addEventListener("DOMContentLoaded", () => {
   AddProjects();
-  const openMenuElement = document.querySelector('#open_mobile_humberger');
-  const closeMenuElement = document.querySelector('#close_mobile_humberger');
-  const menuItems = document.querySelectorAll('.mobile_nav_items');
-  const others = document.querySelector('.mobile_nav');
-  const detailProjectbuttons = document.querySelectorAll('.seedetail');
-  const closeModalButtons = document.querySelectorAll('.modal-close');
-  const contactUsForm = document.querySelector('.contactusform');
+  GetFormData();
+  const openMenuElement = document.querySelector("#open_mobile_humberger");
+  const closeMenuElement = document.querySelector("#close_mobile_humberger");
+  const menuItems = document.querySelectorAll(".mobile_nav_items");
+  const others = document.querySelector(".mobile_nav");
+  const detailProjectbuttons = document.querySelectorAll(".seedetail");
+  const closeModalButtons = document.querySelectorAll(".modal-close");
+  const contactUsForm = document.querySelector(".contactusform");
+  const formInputs = document.querySelectorAll(".formdata");
 
-  contactUsForm.addEventListener('submit', OnSubmit);
-  others.addEventListener('click', CloseMobileMenu);
-  openMenuElement.addEventListener('click', OpenMobileMenu);
-  closeMenuElement.addEventListener('click', CloseMobileMenu);
+  contactUsForm.addEventListener("submit", OnSubmit);
+  others.addEventListener("click", CloseMobileMenu);
+  openMenuElement.addEventListener("click", OpenMobileMenu);
+  closeMenuElement.addEventListener("click", CloseMobileMenu);
   menuItems.forEach((menuItem) => {
-    menuItem.addEventListener('click', CloseMobileMenu);
+    menuItem.addEventListener("click", CloseMobileMenu);
   });
   detailProjectbuttons.forEach((getdetail) => {
-    getdetail.addEventListener('click', GetProjectDetail);
+    getdetail.addEventListener("click", GetProjectDetail);
   });
   closeModalButtons.forEach((close) => {
-    close.addEventListener('click', CloseModal);
+    close.addEventListener("click", CloseModal);
+  });
+  formInputs.forEach((formInput) => {
+    formInput.addEventListener("change", UpdateFormDataStorage);
   });
 });
